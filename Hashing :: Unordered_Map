@@ -1,0 +1,23 @@
+In Unorderd_Map
+-> Key-Value pair are stored;
+-> Duplicate Keys cannot be stored i.e if for duplicate key it updates the previous same key with current key's value;
+-> Stores Key in UnSorted Manner.
+-> Implemented uing Hash Tables (Buckets of Arrays).
+
+// 1. Counting and Storing Frequency of Elements of Vector in Unorderd_Map;
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    vector<int> ans {1,2,2,4,1,6,7,4,4,9};
+    Unorderd_Map<int,int> mp;
+    for(int i = 0; i < 10; i++) { // Counting and Storing Frequency of Elements
+        mp[ans[i]]++;  // Updating key's by incrementing by 1 i.e when elements comes first time it will have value 1 and if it comes 2nd time it's value will be 2 as 
+                       // we are doing ++(increment) and so on....
+    }
+    Unorderd_Map<int,int> :: iterator it; // Creating a Iterator for Unorderd_Map as we can directly access the Unorderd_Map we have to use iterator.
+    for(it = mp.begin(); it != mp.end(); it++) {            // first iterator will point first key and after every iteration it will increment it(iterator) and the
+        cout<< it -> first << " " << it -> second << endl;  // loop will run till it(iterator) will point last key; 
+    }
+  return 0;
+}
