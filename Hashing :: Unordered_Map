@@ -21,3 +21,55 @@ int main() {
     }
   return 0;
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// 2.
+#include <iostream>
+#include <unordered_map>
+#include <iterator>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    unordered_map<int, int> mp;
+    // Inserting elements into mp map;
+    mp.insert(pair<int,int>(1,10));
+    mp.insert(pair<int,int>(2,20));
+    mp.insert(pair<int,int>(3,30));
+    mp[4] = 40;
+    mp[5] = 50;
+    
+    // Creating iterator of mp map;
+    unordered_map<int, int> :: iterator it;
+    
+    // Printing mp map elements from begin till it does not reaches it's end i.e. till the end;
+    cout<< endl << "Printing mp map elements from begin till it does not reaches it's end i.e. till the end;" << endl;
+    for(it = mp.begin(); it != mp.end(); it++) {
+        cout<< "Key : " << it -> first << " Pair : " << it -> second << endl;
+    }
+    
+    // Erasing mp map elements till some limit
+    // Here removing elements greater key 3;
+    /*
+    cout<< endl << "Here removing elements greater than key 3;" << endl;
+    mp.erase(mp.begin(), mp.find(3));
+    for(it = mp.begin(); it != mp.end(); it++) {
+        cout<< "Key : " << it -> first << " Pair : " << it -> second << endl;
+    }
+    */
+    
+    // Erasing particular elements of mp map
+    /*
+    cout<< endl << "Here removing all elements with key 3;" << endl;
+    mp.erase(3);
+    for(it = mp.begin(); it != mp.end(); it++) {
+        cout<< "Key : " << it -> first << " Pair : " << it -> second << endl;
+    }
+    */
+    // begin() returns iterator pointing to beginning element;
+    it = mp.begin();
+    cout<< endl << it -> first << " " << it -> second << endl;
+    return 0;
+}
+
