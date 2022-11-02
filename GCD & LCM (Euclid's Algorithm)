@@ -1,0 +1,39 @@
++-Video Link : 
+https://www.youtube.com/watch?v=utZcJ0leZ_g
+
+Photo Explanation :
+https://github.com/mmj030703/My-Programs/issues/2
+
+Explanation : 
+1)
+We divide the smaller number, the algorithm stops when we find the remainder 0.
+
+Simple Explanation :
+Here we divide dividend by divisor and the remainder now becomes divisor and divisor becomes dividend for next division and we divide until remainder comes 0. When remainder comes 0 the divisor is
+the gcd.
+Eg : 
+A = 18 , B = 12
+Divison 1st => 18(dividend) % 12(divisor) = 6 (remainder)
+Divison 2nd => 12(dividend) % 6(divisor) = 0 (remainder) => GCD
+
+Hence GCD is 6.
+
+Source Code :
+
+int gcd(int a, int b) {
+    if(b == 0) return a;
+    return gcd(b, a%b); // recursive call
+}
+T.C => O(log(min(a,b))) // t.c is almost log(min(a,b)) when we consider one out of a and b to be 2(smallest no by which we can divide) and when we keep on dividing 
+by 2 the complexity formed is log to the base 2.
+S.C => O(1)
+
+2)
+LCM : 
+It could be found using Genral Formula of LCM : 
+LCM = (A * B) / GCD(A,B)
+
+Source Code : 
+write a simple expression
+T.C => O(1)
+S.C => O(1)
