@@ -47,10 +47,11 @@
    The old execution context is obtained from the stack after it finishes, and the outer function is resumed.
    Let's take a look at what happens when the fact(5) call is made.
 
-   let fact = function(n) {
+   int fact(int n) {
      if(n == 0) {
        return 1
-     } else {
+     } 
+     else {
        return n * fact(n - 1); //function calling itself
      }
    }
