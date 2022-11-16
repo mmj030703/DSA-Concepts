@@ -1,0 +1,95 @@
+:: Recursion : 
+   When a function calls itself again and again untill a specified condition is met.
+
+   eg :-
+   void f() {         // Recursive Function
+     cout << "*";
+     f();
+   }
+
+   void main() {
+     f();
+   }
+   // The above eg is an example of infinite or non ending recursion as there is no base condition being specified.
+
+   // Good Example of Recursion :
+   void print(int n) {
+     if(n == 1) {
+       cout << n;
+       return;
+     }
+     else print(n-1);
+     cout << n;
+   }
+   main() {
+     int n = 5; 
+     print(n);
+   }
+   // in the above eg at first from main function print func is called along with agrument n (i.e 5) and func print is executed and at first n is 5 which is != to 1 
+   // so else is executed and again func print is called with n-1 i.e 4 and this keeps on untill n becomes 1 and once n becomes 1 it is printed then gets return and 
+   // for respective call made before the n value is printed.
+   // O/P : 1 2 3 4 5
+   
+:: Base Condition :- It is the condition where recursion stops or it is the condition till which recursion occurs.
+   
+:: Stack | Stack Space : It is the memory where all the non completed or yet to completed functions are stored.
+  
+:: The Execution Context and Stack :-  
+:: The execution context is an internal data structure that contains information about a function's execution, such as the current control flow, current variables, 
+   the value of this, and a few other internal details. There is only one execution context associated with each function call.
+
+   Let's see how recursive function calls work. The following happens when a function makes a nested call:
+
+   The current function is put on hold.
+   A special data structure called the execution context stack is used to remember its associated execution context.
+   The nested call executes.
+   The old execution context is obtained from the stack after it finishes, and the outer function is resumed.
+   Let's take a look at what happens when the fact(5) call is made.
+
+   let fact = function(n) {
+     if(n == 0) {
+       return 1
+     } else {
+       return n * fact(n - 1); //function calling itself
+     }
+   }
+   console.log(fact(5));
+ 
+   Context: { n: 5, at line 1 } factorial(5) :  The execution context initially stores the n = 5 variable. The execution flow is at the first function’s line. 
+   It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 4 (i.e., n-1).
+
+   Context: { n: 4, at line 2 } factorial(4): JavaScript remembers the current execution context in the execution context stack when making a nested call. 
+   The execution context will store the n = 4 variable. The execution flow is at the second function’s line. It will go to the else block (logic part) 
+   as n is not equal to 0. Hence it will make a recursive call for 3 (i.e., n-1).
+
+   Context: { n: 3, at line 3 } factorial(3): The execution context will store the n = 3 variable at the top of the stack. The execution flow is at the 
+   third function’s line. It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 2 (i.e., n-1).
+
+   Context: { n: 2, at line 4 } factorial(2): The execution context will store the n = 2 variable. The execution flow is at the fourth function’s line. 
+   It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 1 (i.e., n-1).
+
+   Context: { n: 1, at line 5 } factorial(1): The execution context will store the n = 1 variable. The execution flow is at the fifth function’s line. 
+   It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 0 (i.e., n-1).
+   
+   After this, fact(1) will call for 0 (i.e., n-1), which is the base case of the recursive function, then the following will take place:
+
+   It will return 1 to its parent call, i.e., fact(1). 
+   Then fact(1) will return 1 to its parent call, i.e., fact(2).
+   Then fact(2) will return 2 to its parent call, i.e., fact(3).
+   Then fact(3) will return 6 to its parent call, i.e., fact(4).
+   Then fact(4) will return 24 to its parent call, i.e., fact(5).
+   Now fact(5) will return the final answer of the function, i.e., 120.
+   
+:: Stack OverFlow :- It is the situation when the stack memory get's fulled.
+                     When many recursive calls are made and a scenerio occurs when memory of stack is fulled by the previous recusive calls.
+                     Infinite Recursion is one of the scenerio when stack overflow occurs.
+                     
+:: Recursion Tree :- It is a smaller representation of the bigger digramatic representation of Recursion in a tree like format.
+   eg :- factorial of number let say for n = 4
+   fac(4) = 4 * fac(3)
+          = 4 * 3 * fac(2)
+          = 4 * 3 * 2 * fac(1)
+          = 4 * 3 * 2 * 1
+          = 24
+    Recursion Tree : Photo Explanation 
+    https://github.com/mmj030703/DSA-Concepts/issues/1
