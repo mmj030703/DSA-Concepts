@@ -11,6 +11,7 @@
      f();
    }
    // The above eg is an example of infinite or non ending recursion as there is no base condition being specified.
+   // This infinite recursion happens untill stack overflow occurs.
 
    // Good Example of Recursion :
    void print(int n) {
