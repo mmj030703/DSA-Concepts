@@ -1,7 +1,13 @@
 :: Recursion : 
    When a function calls itself again and again untill a specified condition is met.
-
-   eg :-
+:: Recursion Basic Problems :
+   1) Print name N times using recursion
+   https://practice.geeksforgeeks.org/problems/print-gfg-n-times/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print-gfg-n-times
+   2) Print 1 to N using recursion
+   https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print_1_to_n_without_loop
+   3) Print N to 1 using recursion
+   https://practice.geeksforgeeks.org/problems/print-n-to-1-without-loop/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print-n-to-1-without-loop   eg :-
+   
    void f() {         // Recursive Function
      cout << "*";
      f();
@@ -48,29 +54,29 @@
    Let's take a look at what happens when the fact(5) call is made.
 
    int fact(int n) {
-     if(n == 0) {
+     if(n == 0) {             // Base Condition
        return 1
      } 
      else {
        return n * fact(n - 1); //function calling itself
      }
    }
-   console.log(fact(5));
+   cout << (fact(5));
  
-   Context: { n: 5, at line 1 } factorial(5) :  The execution context initially stores the n = 5 variable. The execution flow is at the first function’s line. 
+   Context: { n: 5, at line 1 } fact(5) :  The execution context initially stores the n = 5 variable. The execution flow is at the first function’s line. 
    It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 4 (i.e., n-1).
 
-   Context: { n: 4, at line 2 } factorial(4): JavaScript remembers the current execution context in the execution context stack when making a nested call. 
+   Context: { n: 4, at line 2 } fact(4): Compiler remembers the current execution context in the execution context stack when making a nested call. 
    The execution context will store the n = 4 variable. The execution flow is at the second function’s line. It will go to the else block (logic part) 
    as n is not equal to 0. Hence it will make a recursive call for 3 (i.e., n-1).
 
-   Context: { n: 3, at line 3 } factorial(3): The execution context will store the n = 3 variable at the top of the stack. The execution flow is at the 
+   Context: { n: 3, at line 3 } fact(3): The execution context will store the n = 3 variable at the top of the stack. The execution flow is at the 
    third function’s line. It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 2 (i.e., n-1).
 
-   Context: { n: 2, at line 4 } factorial(2): The execution context will store the n = 2 variable. The execution flow is at the fourth function’s line. 
+   Context: { n: 2, at line 4 } fact(2): The execution context will store the n = 2 variable. The execution flow is at the fourth function’s line. 
    It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 1 (i.e., n-1).
 
-   Context: { n: 1, at line 5 } factorial(1): The execution context will store the n = 1 variable. The execution flow is at the fifth function’s line. 
+   Context: { n: 1, at line 5 } fact(1): The execution context will store the n = 1 variable. The execution flow is at the fifth function’s line. 
    It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 0 (i.e., n-1).
    
    After this, fact(1) will call for 0 (i.e., n-1), which is the base case of the recursive function, then the following will take place:
