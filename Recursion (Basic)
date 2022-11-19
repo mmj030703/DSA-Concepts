@@ -9,7 +9,9 @@
    https://practice.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print_1_to_n_without_loop
    3) Print N to 1 using recursion
    https://practice.geeksforgeeks.org/problems/print-n-to-1-without-loop/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print-n-to-1-without-loop   eg :-
-   
+   4) Sum of first n terms
+   https://practice.geeksforgeeks.org/problems/sum-of-first-n-terms5843/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=sum-of-first-n-terms
+   5) 
    void f() {         // Recursive Function
      cout << "*";
      f();
@@ -43,16 +45,12 @@
    
 :: Stack | Stack Space : It is the memory where all the non completed or yet to completed functions are stored.
   
-:: The Execution Context and Stack :-  
-:: The execution context is an internal data structure that contains information about a function's execution, such as the current control flow, current variables, 
-   the value of this, and a few other internal details. There is only one execution context associated with each function call.
-
+:: Stack :-  
    Let's see how recursive function calls work. The following happens when a function makes a nested call:
 
    The current function is put on hold.
-   A special data structure called the execution context stack is used to remember its associated execution context.
+   A special data structure called the execution Stack. It is used to remember/store the yet to be completed functions.
    The nested call executes.
-   The old execution context is obtained from the stack after it finishes, and the outer function is resumed.
    Let's take a look at what happens when the fact(5) call is made.
 
    int fact(int n) {
@@ -65,20 +63,20 @@
    }
    cout << (fact(5));
  
-   Context: { n: 5, at line 1 } fact(5) :  The execution context initially stores the n = 5 variable. The execution flow is at the first function’s line. 
+   Stack: { n: 5, at line 1 } fact(5) :  The Stack initially stores the n = 5 variable. The execution flow is at the first function’s line. 
    It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 4 (i.e., n-1).
 
-   Context: { n: 4, at line 2 } fact(4): Compiler remembers the current execution context in the execution context stack when making a nested call. 
-   The execution context will store the n = 4 variable. The execution flow is at the second function’s line. It will go to the else block (logic part) 
+   Stack: { n: 4, at line 2 } fact(4): Compiler remembers the functions of the current Stack in the Stack when making a nested call. 
+   The Stack will store the n = 4 variable. The execution flow is at the second function’s line. It will go to the else block (logic part) 
    as n is not equal to 0. Hence it will make a recursive call for 3 (i.e., n-1).
 
-   Context: { n: 3, at line 3 } fact(3): The execution context will store the n = 3 variable at the top of the stack. The execution flow is at the 
+   Stack: { n: 3, at line 3 } fact(3): The Stack will store the n = 3 variable at the top of the stack. The execution flow is at the 
    third function’s line. It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 2 (i.e., n-1).
 
-   Context: { n: 2, at line 4 } fact(2): The execution context will store the n = 2 variable. The execution flow is at the fourth function’s line. 
+   Stack: { n: 2, at line 4 } fact(2): The Stack will store the n = 2 variable. The execution flow is at the fourth function’s line. 
    It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 1 (i.e., n-1).
 
-   Context: { n: 1, at line 5 } fact(1): The execution context will store the n = 1 variable. The execution flow is at the fifth function’s line. 
+   Stack: { n: 1, at line 5 } fact(1): The Stack will store the n = 1 variable. The execution flow is at the fifth function’s line. 
    It will go to the else block (logic part) as n is not equal to 0. Hence it will make a recursive call for 0 (i.e., n-1).
    
    After this, fact(1) will call for 0 (i.e., n-1), which is the base case of the recursive function, then the following will take place:
