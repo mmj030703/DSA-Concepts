@@ -13,6 +13,9 @@
    https://practice.geeksforgeeks.org/problems/sum-of-first-n-terms5843/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=sum-of-first-n-terms
    5) Find all factorial numbers less than or equal to N
    https://practice.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/0?problemType=functional&difficulty[]=-1&page=1&query=problemTypefunctionaldifficulty[]-1page1&utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=find-all-factorial-numbers-less-than-or-equal-to-n
+   6) Reverse an Array
+   https://practice.geeksforgeeks.org/problems/reverse-an-array/0?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=reverse-an-array
+   7)
    
    void f() {         // Recursive Function
      cout << "*";
