@@ -15,7 +15,8 @@
    https://practice.geeksforgeeks.org/problems/find-all-factorial-numbers-less-than-or-equal-to-n3548/0?problemType=functional&difficulty[]=-1&page=1&query=problemTypefunctionaldifficulty[]-1page1&utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=find-all-factorial-numbers-less-than-or-equal-to-n
    6) Reverse an Array
    https://practice.geeksforgeeks.org/problems/reverse-an-array/0?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=reverse-an-array
-   7)
+   7) Palindrome String
+   https://practice.geeksforgeeks.org/problems/palindrome-string0817/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=palindrome-string
    
    void f() {         // Recursive Function
      cout << "*";
