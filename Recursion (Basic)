@@ -1,7 +1,14 @@
 :: Recursion : 
    When a function calls itself again and again untill a specified condition is met.
+   
 :: Backtracking :
    It is a form of Recursion where we try to find our soln in reverse manner eg: to print 1 to n numbers we start by n and for printing n to 1 we start by 1.
+   
+:: Recursive Function : 
+   :- Recursive Function is a function which calls itself again and again.
+   :- Recursive fuction can be of type void when it does not return anything, it can be of type where it returns a ceratin value as an ans.
+   :- Multiple recursive calls can be made at once eg : printing nth element of fibo series using recursion.
+   
 :: Recursion Basic Problems :
    1) Print name N times using recursion
    https://practice.geeksforgeeks.org/problems/print-gfg-n-times/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print-gfg-n-times
