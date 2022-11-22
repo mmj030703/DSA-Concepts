@@ -24,6 +24,8 @@
    https://practice.geeksforgeeks.org/problems/reverse-an-array/0?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=reverse-an-array
    7) Palindrome String
    https://practice.geeksforgeeks.org/problems/palindrome-string0817/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=palindrome-string
+   8) Print first n Fibonacci Numbers
+   https://practice.geeksforgeeks.org/problems/print-first-n-fibonacci-numbers1002/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=print-first-n-fibonacci-numbers
    
    void f() {         // Recursive Function
      cout << "*";
