@@ -1,0 +1,36 @@
+Pair : Pair is used to combine together two values that may be of different data types. Pair provides a way to store two heterogeneous objects as a single unit.
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+   // Declaration and Initialization of Pair
+   // pair<int, int> p;  => Declaration of a Pair
+   // pair<int, int> p = {1,2}; => Declaration and Initialization of Pair
+   // pair<pair<int,int>, int> p = {{1,2}, 3}; => Pair can store any data types
+   // for eg : pair<int, float> , pair<string, char>, ...
+    
+   // Accessing Pair Values
+   // pair<pair<int,int>, int> p = {{1,2}, 3}; 
+   // cout << p.first.second << " " << p.second; => Accessing Pair Values
+    
+   // Array of type Pair
+   // pair<int, int> arr[] = {{3,4}, {1,6}, {8,1}};
+   // cout << arr[2].first;
+   
+    /*
+    // Swapping two Pair's
+    pair<int, int> pair1 = {1,2};
+    pair<int, int> pair2 = {4,5};
+    pair1.swap(pair2);
+    cout << pair1.first << " " << pair1.second << endl;
+    cout << pair2.first << " " << pair2.second << endl;
+    */
+    
+    // make_pair(): This template function allows to create a value pair without writing the          types explicitly.
+    pair<string, double> PAIR3;
+    PAIR3 = make_pair("GeeksForGeeks is Best", 4.56);
+    cout << PAIR3.first << " " << PAIR3.second;
+    
+    return 0;
+}
