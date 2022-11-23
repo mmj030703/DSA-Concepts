@@ -1,5 +1,7 @@
 Pair : Pair is used to combine together two values that may be of different data types. Pair provides a way to store two heterogeneous objects as a single unit.
+Editorial Link : https://www.geeksforgeeks.org/pair-in-cpp-stl/
 
+Explanation : 
 #include<bits/stdc++.h>
 using namespace std;
 
