@@ -8,9 +8,18 @@ Explanation :
 using namespace std;
 
 void explainVector() {
+  ////////////////////////////////////////////////////////////////////////////////////////
+  // Vector Size
+  /*
+  vector<int> v1(5);
+  cout << v1.size();
+  */
+  ////////////////////////////////////////////////////////////////////////////////////////
+
   // Declaration and Initialization of Vector
   // vector<int> v; => Declaration
   // vector<int> v = {1,2,3,4}; Declaration and Initialization
+
   /*
   vector<int> v1(5,15); // Declares vector v1 of size 5 and Initializes all indexes by 15.  
   for(auto i : v1) {
@@ -18,6 +27,187 @@ void explainVector() {
   }
   */
 
+  /*
+  vector<int> v(5); // creates vector of size 5;
+  cout << v.size() << endl;
+  */
+
+  /*
+  // We can create vector of pair
+  vector<pair<int, int>> v1 = {{1,2}, {4,3}};
+  for(auto i : v1) {
+    cout << i.first << " " << i.second << endl;
+  }
+  */
+
+  /*
+  // Copying v1 elements into v2; 
+  vector<int> v1 = {1,23,4,5};
+  vector<int> v2(v1); 
+  for(auto i : v2) {
+    cout << i << " ";
+  }
+  */
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// Inserting Values into Vector
+/*
+vector<int> v1;
+v1.push_back(158); // inserts values from the back v1 = {158}
+for(int i : v1) {
+  cout << i;
+}
+*/
+/*
+v1.push_back(92);   // v1 = {158, 92}
+for(int i : v1) {
+  cout << i << " ";
+}
+*/
+/*
+// Creating a Vector of Pair
+vector<pair<int, int>> v;
+v.push_back({1,2});       // here braces required
+for(pair<int, int> i : v) {
+  cout << i.first << " " << i.second;
+}
+*/
+
+/*
+v1.emplace_back(100);
+for(int i : v1) {
+  cout << i << " ";
+}
+*/
+/*
+vector<pair<int, int>> v;
+v.emplace_back(1,2);       // here no braces required
+for(pair<int, int> i : v) {
+  cout << i.first << " " << i.second;
+}
+*/
+
+/*
+vector<int> v = {1,2,3,4};
+// v.insert(v.begin(), 100);  // stores 100 in beginning
+// v.insert(v.begin()+2, 5, 100);  // stores 100 5 times from 2nd Index
+vector<int> v1 = {7,8};
+v1.insert(v1.begin(), v.begin(), v.end());
+for(int i : v1) {
+  cout << i << " ";
+}
+*/
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// Iterator in Vector
+/*
+vector<int> v1 = {1,2,3,4,45};
+vector<int> :: iterator it;
+*/
+//
+/*
+for(it = v1.begin(); it != v1.end(); it++) {
+  cout << *it << " ";
+}
+*/
+/*
+for(vector<int> :: iterator it = v1.begin(); it != v1.end(); it++) { // iterator created here is only for this for block and outside 
+                                                                     // this block there is no it iterator
+  cout << *it << " ";
+}
+*/
+// Others
+/*
+it = v1.begin();
+cout << *it << " ";
+it++;
+cout << *it;
+*/
+/*
+it = v1.end(); // end() points to the position after last element so for accessing last element do --
+cout << *--it << " "; // now it iterator points to last element i.e. v1[4]
+--it;
+cout << *it << " ";   // now it iterator points to 3rd index i.e. v1[3]
+it = it - 2;
+cout << *it;          // now it iterator points to 1st index i.e. v1[1]
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////
+ 
+// Accessing Elements in Vector
+/*
+vector<int> v = {1,2,3,4};
+*/
+/*
+vector<int> :: iterator it;
+cout << v[0] << " " << v.at(1) << " ";
+cout << v.back(); // gives last element of vector
+*/
+/*
+vector<int> :: iterator it;
+for(it = v.begin(); it != v.end(); it++) {
+  cout << *it << " ";
+}
+*/
+/*
+for(auto it = v.begin(); it != v.end(); it++) { // auto automatically detects the data type 
+  cout << *it << " ";
+}
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// Erasing Vector Elements
+/*
+vector<int> v = {1,2,3,4,5,6,7};
+v.erase(v.begin() + 2);         // syntax :: vec_name.erase(vec_name.begin() + indeex_to_delete) 
+*/
+
+/*
+// here we delete a range of elements from ind 2 to ind 4
+v.erase(v.begin()+2, v.begin()+5);  // here after , the index value i.e 5 is +1 than mentioned
+for(auto i : v) { // auto automatically detects the data type 
+  cout << i << " ";
+}
+*/
+
+/*
+v.pop_back();         // deletes one element from back
+*/
+
+/*
+v.clear();            // clear all elements of vector
+for(auto i : v) {
+  cout << i << " ";
+}
+*/
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+// Other Vector Methods
+
+/*
+// Swapping Contents of 2 Vectors
+vector<int> v = {1,2,3,4}; 
+vector<int> v1 = {6,7,8,9};
+v1.swap(v);
+for(int i : v) {
+  cout << i << " ";
+}
+cout << endl;
+for(int i : v1) {
+  cout << i << " ";
+}
+*/
+
+// vector<int> v;
+// cout << v.empty(); // Return true if vector is empty and false if not empty
+/*
+vector<int> v = {1,2,3,4};
+cout << v.empty();
+*/
 }
 
 int main() {
