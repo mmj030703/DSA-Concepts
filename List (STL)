@@ -1,0 +1,89 @@
+List : Lists are sequence containers that allow non-contiguous memory allocation. As compared to vector, the list has slow traversal, but once a position has been 
+       found, insertion and deletion are quick. Normally, when we say a List, we talk about a doubly linked list.
+
+Editorial Link : 
+https://www.geeksforgeeks.org/list-cpp-stl/
+
+Explanation : 
+#include<bits/stdc++.h>
+using namespace std;
+
+void explainList() {
+  // : List is just like a vector just with a basic difference that vector stores elements in contagious
+  //   memory location's and list stores element's in non contagious memory element's.
+  // : All methods of list are same as that of Vector
+
+  ////////////////////////////////////////////////////////////////////////////////////////
+  // Declaration and Initialization of List
+  // list<int> ls;  // Declaration
+  /*
+
+  list<pair<int, int>> ls = {{1,2},{3,4}}; // declaring and initializing a list of pairs
+  for(pair<int, int> i : ls) {
+    cout << i.first << " " << i.second << endl;
+  }
+  */
+
+  /*
+  list<int> ls = {1,2,3,4}; // Declaration and Initialization
+  for(int i : ls) {
+    cout << i << " ";
+  }
+  */
+
+  /*
+  list<int> ls1(3);             // declaring a list of size 3;
+  ls1 = {1,2,3,4,5,6,7};
+  */
+  /*
+  list<int> ls(5, 4);           // initializing list ls by 5 four's;
+  for(int i : ls) {
+    cout << i << " ";
+  } 
+  */
+
+  /*
+  list<int> ls = {1,2,3,4};        // assigning elements of ls to ls1
+  list<int> ls1(ls);
+  for(int i : ls1) cout << i << " ";
+  */
+
+//////////////////////////////////////////////////////////////////////////////////////////
+  // Inserting Elements into List
+  // push_back() and emplace_back() are used as same as used in vectors
+
+  /*
+  list<int> ls = {1,2,3,4};
+  ls.push_front(10);  // it pushes / inserts element in the front
+  for(auto i : ls) cout << i << " ";
+  */
+
+  /*
+  list<int> ls = {1,2,3,4};
+  ls.emplace_front(92);   // it pushes / inserts element in the front
+  for(auto i : ls) cout << i << " ";
+  */
+
+  // inserting a pair into list
+  /*
+  list<pair<int,int>> ls = {{1,2}, {3,4}};
+  ls.push_front({100,99});   // here we use braces
+  for(auto it : ls) cout << it.first << " " << it.second << endl;
+  */
+
+  /*
+  list<pair<int,int>> ls = {{1,2}, {3,4}};
+  ls.emplace_front(100,99);   // here we don't use braces
+  for(auto it : ls) cout << it.first << " " << it.second << endl;
+  */
+
+ /////////////////////////////////////////////////////////////////////////////////////////
+
+ // Rest of the methods of List are as same as that of vectors
+
+}
+
+int main() {
+  explainList();
+  return 0;
+}
