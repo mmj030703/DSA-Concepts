@@ -1,0 +1,41 @@
+Stack : Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is 
+removed from that end only.
+
+Editorial Link :
+https://www.geeksforgeeks.org/stack-in-cpp-stl/
+
+Explanation : 
+#include<bits/stdc++.h>
+using namespace std;
+
+void explainStack() {
+  // : Stack : Stacks are a type of container adaptors with LIFO(Last In First Out) type of 
+  //   working, where a new element is added at one end (top) and an element is removed from that 
+  //   end only.
+  
+  // : All methods of Stack are same as that of List
+
+  ////////////////////////////////////////////////////////////////////////////////////////
+  // Declaration and Initialization
+  stack<int> st;   // decalaration of stack
+  
+  // Inserting Element into Stack
+  st.push(1);      
+  cout << st.top() << endl;  // return top element of stack
+  st.emplace(5);
+  while(!st.empty()) {
+    cout << st.top() << " ";
+    st.pop();  // deletes the top element of stack
+  }
+
+  ////////////////////////////////////////////////////////////////////////////////////////
+  
+  // Rest of the methods of Stack are as same as that of list
+  // size(), empty(), swap() can be used as same as used in lists and vectors
+
+}
+
+int main() {
+  explainStack();
+  return 0;
+}
