@@ -1,0 +1,45 @@
+Queue : Queues are a type of container adaptors that operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are 
+deleted from the front. Queues use an encapsulated object of deque or list (sequential container class) as its underlying container, providing a specific set of 
+member functions to access its elements.
+
+Editorial Link : 
+https://www.geeksforgeeks.org/queue-cpp-stl/
+
+Explanation : 
+#include<bits/stdc++.h>
+using namespace std;
+
+void explainQueue() {
+  ////////////////////////////////////////////////////////////////////////////////////////
+  // Declaration and Initialization
+  queue<int> q; // Declaring a queue
+  // Inserting Element into Queue
+  q.push(1); // inserts element in the back
+  q.push(4);
+  q.push(8);
+  q.push(42);
+  q.emplace(10);   // inserts element in the back
+  while(!q.empty()) {
+    cout << q.front() << " ";     // front gives the element present in front
+    q.pop();   // deletes element from the front
+  }
+  cout << endl << q.empty();    // returns boolean value whether the queue is empty or not
+
+  queue<int> q1; // Declaring a queue
+  q1.push(2);
+  q1.push(1);
+  q1.push(4);
+  cout << endl << q1.back();   // gives last element of the queue
+
+
+  ////////////////////////////////////////////////////////////////////////////////////////
+  
+  // Rest of the methods of Stack are as same as that of list
+  // size(), swap() can be used as same as used in lists and vectors
+
+}
+
+int main() {
+  explainQueue();
+  return 0;
+}
