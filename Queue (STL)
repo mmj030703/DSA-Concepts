@@ -31,7 +31,10 @@ void explainQueue() {
   q1.push(4);
   cout << endl << q1.back();   // gives last element of the queue
 
-
+  // Updating value at back() & front()
+  q1.back() += 5;        // q1.back() = q1.back() + 5;
+  q1.front() += 5;        // q1.front() = q1.front() + 2;
+  
   ////////////////////////////////////////////////////////////////////////////////////////
   
   // Rest of the methods of Stack are as same as that of list
