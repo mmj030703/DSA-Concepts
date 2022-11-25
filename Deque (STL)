@@ -1,0 +1,42 @@
+Deque : Double-ended queues are sequence containers with the feature of expansion and 
+        contraction on both ends.
+
+Editorial Link : 
+https://www.geeksforgeeks.org/deque-cpp-stl/
+
+Explanation : 
+#include<bits/stdc++.h>
+using namespace std;
+
+void explainList() {
+  // : Deque : Double-ended queues are sequence containers with the feature of expansion and 
+  //   contraction on both ends. They are similar to vectors, but are more efficient in case of  
+  //   insertion and deletion of elements. Unlike vectors, contiguous storage allocation may not 
+  //   be guaranteed. 
+  
+  // : All methods of Deque are same as that of List
+
+  ////////////////////////////////////////////////////////////////////////////////////////
+  // Extra Methods of Deque
+  // Begin() :: returns iterator pointing to the beginning position
+  deque<int> d {1,2,3,4}; // declaring and initializing deque
+  deque<int> :: iterator it = d.begin();
+  cout << (*it); 
+  cout << endl;
+
+  // back() gives last element
+  cout << d.back() << endl;
+  
+  // front() gives first element
+  cout << d.front() << endl;
+
+  ////////////////////////////////////////////////////////////////////////////////////////
+
+ // Rest of the methods of deque are as same as that of list
+
+}
+
+int main() {
+  explainList();
+  return 0;
+}
