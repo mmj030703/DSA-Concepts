@@ -1,0 +1,59 @@
+Set : Sets are a type of associative container in which each element has to be unique because the value of the element identifies it. The values are stored in a specific 
+sorted order i.e. either ascending or descending.
+
+Editorial Link : 
+https://www.geeksforgeeks.org/set-in-cpp-stl/
+
+Explanation : 
+#include<bits/stdc++.h>
+using namespace std;
+
+void explainSet() {
+  ////////////////////////////////////////////////////////////////////////////////////////
+  /*
+  set<int> s {1,2,3,4}; // declaration and initialization of set
+  for(int i : s) cout << i <<  " ";
+  s.insert(1); // inserts element into set
+  s.emplace(5); // inserts element into set
+  */
+  ////////////////////////////////////////////////////////////////////////////////////////
+  
+  // Others Methods of Set
+  /*
+  // find() :: finds the given element
+  set<int> s = {2,5,7,8};
+  // auto it = s.find(5); // returns iterator pointing to the element found and to end if not found
+  auto it = s.find(5);
+  
+  // erase() :: erases the specified element
+  s.erase(it);  // T.C => O(1)
+  s.erase(2); // erases the specified element // T.C => O(logn)
+  for(int i : s) cout << i <<  " ";
+  */
+  
+  // cout << endl << s.count(6); // gives the count of element as 0 if does not exist and 1 if it exists
+
+  // erase a range of element 
+  set<int> s = {1,5,6,7};
+  set<int> :: iterator it = s.find(5);
+  set<int> :: iterator it1 = s.find(6);
+  s.erase(it, ++it1);    // here range is [5,6) so 6 is not included so we incremented iterator by
+                         // one index so it1 becomes 7 and 6 gets included in range
+  for(int i : s) cout << i <<  " ";
+  cout << endl;
+
+  // Lower and Upper Bound Methods
+  set<int> s1 {1,2,3,5}; 
+  auto it = s1.upper_bound(1); // gives upper bound
+  auto it = s1.lower_bound(3); // gives lower bound
+  ////////////////////////////////////////////////////////////////////////////////////////
+  
+  // Rest of the methods of Set are as same as that of list
+  // size(), swap(), empty() can be used as same as used in lists and vectors
+
+}
+
+int main() {
+  explainSet();
+  return 0;
+}
