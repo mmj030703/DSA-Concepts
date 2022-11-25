@@ -1,0 +1,46 @@
+Priority Queue :
+Priority queues are a type of container adapters, specifically designed such that the first element of the queue is either the greatest or the smallest of all elements 
+in the queue and elements are in nonincreasing order (hence we can see that each element of the queue has a priority {fixed order}). However in C++ STL, by default, 
+the top element is always the greatest element. We can also change it to the smallest element at the top. Priority queues are built on the top to the max heap and uses 
+array or vector as an internal structure.
+
+Editorial Link : 
+https://www.geeksforgeeks.org/priority-queue-in-cpp-stl/
+
+Explanation : 
+#include<bits/stdc++.h>
+using namespace std;
+
+void explainQueue() {
+  ////////////////////////////////////////////////////////////////////////////////////////
+  // push(), pop(), emplace() methods are used as same as Queue
+
+  ////////////////////////////////////////////////////////////////////////////////////////
+  /*
+  priority_queue<int> q;  // Declaration of Priority Queue
+  q.push(1); // T.C => O(log(n))
+  q.push(5);
+  q.push(4);
+  q.push(3);
+  q.pop();  // T.C => O(log(n))
+  cout << q.top(); // gives the highest(greatest) element in priority_queue // T.C => O(1)
+  */
+
+  // Minimum Heap
+  priority_queue<int, vector<int>, greater<int>> pq; // here greater sorts queue
+  pq.push(1);
+  pq.push(5);
+  pq.push(4);
+  pq.push(3);
+  cout << pq.top(); // now we get smallest element on top
+  ////////////////////////////////////////////////////////////////////////////////////////
+  
+  // Rest of the methods of Stack are as same as that of list
+  // size(), swap(), empty() can be used as same as used in lists and vectors
+
+}
+
+int main() {
+  explainQueue();
+  return 0;
+}
