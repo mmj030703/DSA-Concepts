@@ -78,6 +78,18 @@ void explainList() {
   */
 
  /////////////////////////////////////////////////////////////////////////////////////////
+ 
+ // Deleting Element's in List
+  list<int> ls {1,2,3,4};
+  for(int i : ls) cout << i << " ";
+  ls.pop_back();
+  cout << endl;
+  for(int i : ls) cout << i << " ";
+  ls.pop_front();
+  cout << endl;
+  for(int i : ls) cout << i << " ";
+ 
+ /////////////////////////////////////////////////////////////////////////////////////////
 
  // Rest of the methods of List are as same as that of vectors
 
