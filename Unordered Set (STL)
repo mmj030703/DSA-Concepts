@@ -1,0 +1,30 @@
+Unordered Set : An unordered_set is implemented using a hash table where keys are hashed into indices of a hash table so that the insertion is always randomized. All 
+operations on the unordered_set takes constant time O(1) on an average which can go up to linear time O(n) in worst case which depends on the internally used hash 
+function, but practically they perform very well and generally provide a constant time lookup operation. 
+
+Editorial Link : 
+https://www.geeksforgeeks.org/unordered_set-in-cpp-stl/
+
+Explanation : 
+#include<bits/stdc++.h>
+using namespace std;
+
+void explainUnordered_Set() {
+  ////////////////////////////////////////////////////////////////////////////////////////
+  // All the methods of Unordered Set are as same as that of set
+  ////////////////////////////////////////////////////////////////////////////////////////
+  /*
+  unordered_set<int> s {1,1,2,3,4}; // declaration and initialization of Unordered Set
+  for(int i : s) cout << i <<  " ";
+  */
+  ////////////////////////////////////////////////////////////////////////////////////////
+  
+  // Lower and Upper bound dosen't work in Unordered Set
+  // size(), swap(), empty() can be used as same as used in lists and vectors
+
+}
+
+int main() {
+  explainUnordered_Set();
+  return 0;
+}
