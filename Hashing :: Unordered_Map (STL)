@@ -4,6 +4,11 @@ In Unorderd_Map
 -> Stores Key in UnSorted Manner.
 -> Implemented uing Hash Tables (Buckets of Arrays).
 
+Editorial Link : 
+https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/
+
+// All methods are same as set and unordered map
+
 // 1. Counting and Storing Frequency of Elements of Vector in Unorderd_Map;
 #include<bits/stdc++.h>
 using namespace std;
