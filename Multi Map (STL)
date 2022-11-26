@@ -1,0 +1,11 @@
+Multi Map : Multimap is similar to a map with the addition that multiple elements can have the same keys. Also, it is NOT required that the key-value and mapped value 
+pair have to be unique in this case. One important thing to note about multimap is that multimap keeps all the keys in sorted order always. These properties of multimap 
+make it very much useful in competitive programming.
+
+Editorial Link :
+https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/
+
+Explanation :
+All the methods of Multi Map are as same as that of map
+multimap<int, int> mp;
+mp[1] = 100 // it is not allowed.
