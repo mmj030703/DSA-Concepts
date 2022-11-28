@@ -1,0 +1,73 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+// comp explanation:
+// we sot according to second part of pair in ascending order if second part of pair is smaller than 
+// second part of second pair. If this is not the case and both are equal than sor acording to the 
+// first part of pair in descending order.
+
+bool comp(pair<int, int> p1, pair<int, int> p2) {
+  if(p1.second < p2.second) return true;
+  if(p1.second > p2.second) return false;
+  if(p1.first > p2.first) return true;
+  return false;
+}
+
+void explainSTLAlgo() {
+
+  ////////////////////////////////////////////////////////////////////////////////////////
+  /*
+  vector<int> v {3,1,-9,67,3,0};
+  sort(v.begin(), v.end()); // sorting vector from begin to end
+  cout << endl;
+  array<int, 5> a1; // declaring array throuhg STL
+  int a[5] = {3,1,2,0,-9};
+  // sort(a, a+5);  // sorting array from start to end
+  sort(a+2, a+4);   // sorting array from one index to another
+  for(int i : a) cout << i << " ";
+  */
+
+  /*
+  int arr[4] = {1,2,3,4};
+  sort(arr, arr+4, comp); // my way of sorting array
+  */
+ 
+  /*
+  int n = 15;    // 15 binary => 1111 => set bits => 4
+  int setBits = __builtin_popcount(n); // gives the no of set bits (binary 1) in a integer number;
+  cout << setBits;
+  */
+
+  /*
+  long long n = 1521701243;    // 15 binary => 1111 => set bits => 4
+  int setBits = __builtin_popcountll(n); // gives the no of set bits (binary 1) in a long long number;
+  cout << setBits;
+  */
+
+  /*
+  int a[] = {1,23,4,5};
+  // max(), min() gives max and min element in an array
+  cout << "max : " << *max_element(a, a+4) << " " << *min_element(a, a+4); 
+  */
+
+  string s = "123";
+  do {
+    cout << s << endl;
+  } while (next_permutation(s.begin(), s.end()));
+
+  /*
+  // MY WAY of sorting
+  pair<int, int> p[] = {{1,2}, {2,1}, {4,1}};
+  sort(p, p+3, comp);
+  for(auto i : p) {
+    cout << i.first << " " << i.second << endl;
+  }
+  */
+
+  ////////////////////////////////////////////////////////////////////////////////////////
+}
+
+int main() {
+  explainSTLAlgo();
+  return 0;
+}
