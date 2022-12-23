@@ -1,0 +1,15 @@
+Boyer - Moore's Voting Algorithm is used to find elements in array greater than n/2 times. It is also used to find elements in array greater than n/3 times.
+
+Algorithm : 
+Iterate over the array
+1) if current element = candidate1 then increment votes of candidate1 else if current element = candidate2 then increment votes of candidate2.
+2) else if either of them are minority i.e. either of them have 0 votes than we assign current element to that candidate and update it's count to 1.
+3) else if both of them are in minority i.e. thier both's votes are 0 than decrement one vote from both the vote count of candidates.
+
+Crisp Algo : 
+1) if either of candidate is equal is to current element i.e if either of them find someone like them then increment thier majority by 1 i.e. thier votes;
+2) if either of them is in minority i.e. thier votes is 0 then assign current element to that candidate and update it's votes to 1;
+3) if both of them are in minority then decrement both of thier votes count by 1; 
+
+Intution : 
+The catch is if we need to find element whose count is greater than n/3 times then at max we can have 2 majority elements in array of n size.
