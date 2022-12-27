@@ -208,6 +208,13 @@ for(int i : v1) {
 vector<int> v = {1,2,3,4};
 cout << v.empty();
 */
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Finding element in vector
+// Using find function
+   vector<int> v {1,2,3,4,5};
+   auto it = find(v.begin(), v.end(), 3);  // return a pointer to that element if found and if not found the iterator points to the end of vector
+   if(it != v.end()) cout << "Element Found.";
+   else cout << "Not Found";
 }
 
 int main() {
