@@ -1,0 +1,146 @@
+package com.practice;
+
+public class ArrayList {
+    public static void main(String[] args) {
+        /*
+        ArrayList<Float> l1 = new ArrayList<>();
+        l1.add(10f);
+        l1.add(10.5f);
+        l1.add(10.09f);
+        l1.add(10.12f);
+        l1.add(10.87f);
+        l1.add(10.0101f);
+        l1.add(0,100f);
+        l1.add(7,171f);
+        l1.add(9,928f);
+        for (Float i : l1) {
+            System.out.println(i + ", ");
+        }
+        */
+
+        /*
+        ArrayList<Character> list = new ArrayList<Character>(5);
+        list.add(0,'a');
+        list.add(1,'b');
+        list.add(2,'c');
+        list.add(3,'d');
+        list.add(4,'e');
+        list.add(5,'f');
+        for(char i : list) {
+            System.out.print(i + ", ");
+        }
+        */
+
+        /*
+        ArrayList<String> l1 = new ArrayList<>(List.of("January","February","March"));
+        System.out.println(l1);
+        */
+
+        /*
+        ArrayList<Integer> l1 = new ArrayList<>(List.of(1,2,3,4));
+        ArrayList<Integer> l2 = new ArrayList<>(l1);
+        System.out.println(l2);
+        */
+
+        /*
+        ArrayList<Integer> l1 = new ArrayList<>(List.of(1,2,3,4));
+        ArrayList<Integer> l2 = new ArrayList<>();
+        l2.add(101);
+        l2.add(102);
+        l2.add(103);
+        l2.add(104);
+        l2.addAll(3,l1);
+        System.out.println(l2);
+        */
+
+        /*
+        ArrayList<Integer> l1 = new ArrayList<>(List.of(1,2,3,4));
+        System.out.println(l1);
+        l1.clear();
+        System.out.println(l1);
+        */
+
+        /*
+        ArrayList<Integer> l1 = new ArrayList<>(List.of(1,2,3,4));
+        System.out.println(l1.contains(3));
+        System.out.println(l1.contains(100));
+        */
+
+        /*
+        ArrayList<String> l1 = new ArrayList<>(List.of("Hello", "World", "Hello", "World"));
+        System.out.println(l1.get(0));
+        System.out.println(l1.get(1));
+        System.out.println(l1.getClass());
+        System.out.println(l1.indexOf("Hello"));
+        System.out.println(l1.indexOf("World"));
+        System.out.println(l1.lastIndexOf("Hello"));
+        System.out.println(l1.lastIndexOf("World"));
+        */
+
+        /*
+        ArrayList<String> l1 = new ArrayList<>(List.of("Hello", "World", "Hello", "World"));
+        ArrayList<String> l2 = new ArrayList<>();
+        l2.addAll(l1);
+        l2.add("Good");
+        l2.add("Morning");
+        System.out.println(l1);
+        l1.remove(0);
+        System.out.println(l1);
+        l1.remove("World");
+        System.out.println(l1);
+        System.out.println(l2);
+        l2.removeAll(l1);
+        System.out.println(l2);
+
+        ArrayList<Integer> list1 = new ArrayList<>(List.of(1,2,3,4));
+        ArrayList<Integer> list2 = new ArrayList<>();
+        list2.add(1);
+        list2.add(2);
+        list2.removeAll(list1);
+        System.out.println(list2);
+        */
+
+//      System.out.println(l1.isEmpty());
+
+        /*
+        ArrayList<Integer> list1 = new ArrayList<>(List.of(1,5,8,18));
+        Iterator it = list1.iterator();
+        for(int i = 0; i < list1.size(); i++)
+            System.out.println(it.next());
+        */
+
+        /*
+        ArrayList<Integer> list1 = new ArrayList<>(List.of(1,5,8,18));
+        ArrayList<Integer> list2 = new ArrayList<>(list1);
+        ArrayList<Integer> list3 = new ArrayList<>();
+        System.out.println(list2.retainAll(list1));
+        */
+
+        /*
+        ArrayList<Integer> list1 = new ArrayList<>(List.of(1,5,8,18));
+        ArrayList<Integer> list2 = new ArrayList<>();
+        list2.addAll(list1.subList(1,3));
+        System.out.println(list2);
+        */
+
+        /*
+        ArrayList<Integer> list1 = new ArrayList<>(List.of(1,5,8,18));
+        int arr[] = new int[10];
+        Object[] ans = list1.toArray();
+        for (Object i : ans) {
+            System.out.println(i);
+        }
+        */
+
+        /*
+        ArrayList<Integer> list1 = new ArrayList<>(100);
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(4);
+        list1.add(5);
+        list1.add(6);
+        list1.trimToSize();
+        */
+    }
+}
