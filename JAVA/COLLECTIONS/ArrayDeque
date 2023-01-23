@@ -1,0 +1,158 @@
+package com.practice;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ArrayDeque;
+import java.util.List;
+
+public class arraydeque {
+    public static void main(String[] args) {
+        /*
+        ArrayDeque<Integer> l1 = new ArrayDeque<>();
+        l1.add(1);
+        l1.add(2);
+        l1.add(3);
+        l1.add(4);
+        l1.add(5);
+        l1.addFirst(100);
+        l1.offerFirst(101);
+        l1.addLast(102);
+        l1.offerLast(105);
+        System.out.println(l1);
+        System.out.println(l1.getFirst());
+        System.out.println(l1.getLast());
+        */
+
+        /*
+        ArrayDeque<Float> l1 = new ArrayDeque<>();
+        ArrayDeque<Float> l2 = new ArrayDeque<>(List.of(1f,2f,4f,5f));
+        l1.addAll(l2);
+        System.out.println(l1);
+        */
+
+        /*
+        ArrayDeque<Float> l1 = new ArrayDeque<>();
+        ArrayList<Float> l2 = new ArrayList<>(List.of(1f,2f,4f,5f));
+        l1.addAll(l2);
+        l1.add(10f);
+        l1.add(10.5f);
+        l1.add(10.09f);
+        l1.add(10.12f);
+        l1.add(10.87f);
+        l1.add(10.0101f);
+        l1.add(0,100f);
+        l1.add(7,171f);
+        l1.add(9,928f);
+        for (Float i : l1) {
+            System.out.println(i + ", ");
+        }
+        */
+
+        /*
+        ArrayDeque<Character> list = new ArrayDeque<Character>();
+        list.add('a');
+        list.add('b');
+        list.add('c');
+        list.add('d');
+        list.add('e');
+        list.add('f');
+        for(char i : list) {
+            System.out.print(i + ", ");
+        }
+        */
+
+        /*
+        ArrayDeque<String> l1 = new ArrayDeque<>(List.of("January","February","March"));
+        System.out.println(l1);
+        */
+
+        /*
+        ArrayDeque<Integer> l1 = new ArrayDeque<>(List.of(1,2,3,4));
+        ArrayDeque<Integer> l2 = new ArrayDeque<>(l1);
+        System.out.println(l2);
+        */
+
+        /*
+        ArrayDeque<Integer> l1 = new ArrayDeque<>(List.of(1,2,3,4));
+        ArrayDeque<Integer> l2 = new ArrayDeque<>();
+        l2.add(101);
+        l2.add(102);
+        l2.add(103);
+        l2.add(104);
+        l2.addAll(l1);
+        System.out.println(l2);
+        */
+
+        /*
+        ArrayDeque<Integer> l1 = new ArrayDeque<>(List.of(1,2,3,4));
+        System.out.println(l1);
+        l1.clear();
+        System.out.println(l1);
+        */
+
+        /*
+        ArrayDeque<Integer> l1 = new ArrayDeque<>(List.of(1,2,3,4));
+        System.out.println(l1.contains(3));
+        System.out.println(l1.contains(100));
+        */
+
+        /*
+        ArrayDeque<String> l1 = new ArrayDeque<>(List.of("Hello", "World", "Hello", "World"));
+        ArrayDeque<String> l2 = new ArrayDeque<>();
+        l2.addAll(l1);
+        l2.add("Good");
+        l2.add("Morning");
+        System.out.println(l1);
+        l1.remove(0);
+        System.out.println(l1);
+        l1.remove("World");
+        System.out.println(l1);
+        System.out.println(l2);
+        l2.removeAll(l1);
+        System.out.println(l2);
+
+        ArrayDeque<Integer> list1 = new ArrayDeque<>(List.of(1,2,3,4));
+        ArrayDeque<Integer> list2 = new ArrayDeque<>();
+        list2.add(1);
+        list2.add(2);
+        list2.removeAll(list1);
+        System.out.println(list2);
+        */
+
+        /*
+        ArrayDeque<Integer> l1 = new ArrayDeque<>();
+        l1.add(1);
+        l1.add(2);
+        l1.add(3);
+        l1.add(4);
+        l1.add(5);
+        l1.removeFirst();
+        l1.removeLast();
+        System.out.println(l1);
+        */
+
+//      System.out.println(l1.isEmpty());
+
+        /*
+        ArrayDeque<Integer> list1 = new ArrayDeque<>(List.of(1,5,8,18));
+        Iterator it = list1.iterator();
+        for(int i = 0; i < list1.size(); i++)
+            System.out.println(it.next());
+        */
+
+        /*
+        ArrayDeque<Integer> list1 = new ArrayDeque<>(List.of(1,5,8,18));
+        ArrayDeque<Integer> list2 = new ArrayDeque<>(list1);
+        ArrayDeque<Integer> list3 = new ArrayDeque<>();
+        System.out.println(list2.retainAll(list1));
+        */
+
+        /*
+        ArrayDeque<Integer> list1 = new ArrayDeque<>(List.of(1,5,8,18));
+        int arr[] = new int[10];
+        Object[] ans = list1.toArray();
+        for (Object i : ans) {
+            System.out.println(i);
+        }
+        */
+    }
+}
