@@ -1,0 +1,114 @@
+package com.practice;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+
+public class hashSet {
+    public static void main(String[] args) {
+        /*
+        HashSet<Integer> l1 = new HashSet<>();
+        l1.add(1);
+        l1.add(2);
+        l1.add(3);
+        l1.add(4);
+        l1.add(5);
+        System.out.println(l1);
+        */
+
+        /*
+        HashSet<Float> l1 = new HashSet<>();
+        HashSet<Float> l2 = new HashSet<>(List.of(1f,2f,4f,5f));
+        l1.addAll(l2);
+        System.out.println(l1);
+        */
+
+        /*
+        HashSet<Character> list = new HashSet<Character>();
+        list.add('a');
+        list.add('b');
+        list.add('c');
+        list.add('d');
+        list.add('e');
+        list.add('f');
+        for(char i : list) {
+            System.out.print(i + ", ");
+        }
+        */
+
+        /*
+        HashSet<String> l1 = new HashSet<>(List.of("January","February","March"));
+        System.out.println(l1);
+        */
+
+        /*
+        HashSet<Integer> l1 = new HashSet<>(List.of(1,2,3,4));
+        HashSet<Integer> l2 = new HashSet<>(l1);
+        System.out.println(l2);
+        */
+
+        /*
+        HashSet<Integer> l1 = new HashSet<>(List.of(1,2,3,4));
+        System.out.println(l1);
+        l1.clear();
+        System.out.println(l1);
+        */
+
+        /*
+        HashSet<Integer> l1 = new HashSet<>(List.of(1,2,3,4));
+        System.out.println(l1.contains(3));
+        System.out.println(l1.contains(100));
+        */
+
+        /*
+        HashSet<String> l1 = new HashSet<>(List.of("Hello", "World", "Hello", "World"));
+        HashSet<String> l2 = new HashSet<>();
+        l2.addAll(l1);
+        l2.add("Good");
+        l2.add("Morning");
+        System.out.println(l1);
+        l1.remove(0);
+        System.out.println(l1);
+        l1.remove("World");
+        System.out.println(l1);
+        System.out.println(l2);
+        l2.removeAll(l1);
+        System.out.println(l2);
+
+        HashSet<Integer> list1 = new HashSet<>(List.of(1,2,3,4));
+        HashSet<Integer> list2 = new HashSet<>();
+        list2.add(1);
+        list2.add(2);
+        list2.removeAll(list1);
+        System.out.println(list2);
+        */
+
+        /*
+        HashSet<Integer> l1 = new HashSet<>(List.of(1,5,8,18));
+        System.out.println(l1.isEmpty());
+        */
+
+        /*
+        HashSet<Integer> list1 = new HashSet<>(List.of(1,5,8,18));
+        Iterator it = list1.iterator();
+        for(int i = 0; i < list1.size(); i++)
+            System.out.println(it.next());
+        */
+
+        /*
+        HashSet<Integer> list1 = new HashSet<>(List.of(1,5,8,18));
+        HashSet<Integer> list2 = new HashSet<>(list1);
+        HashSet<Integer> list3 = new HashSet<>();
+        System.out.println(list2.retainAll(list1));
+        */
+
+        /*
+        HashSet<Integer> list1 = new HashSet<>(List.of(1,5,8,18));
+        int arr[] = new int[10];
+//        Object[] ans = list1.toArray(); // can do this way also
+        Integer[] ans = list1.toArray(new Integer[list1.size()]);
+        for (Object i : ans) {
+            System.out.println(i);
+        }
+        */
+    }
+}
